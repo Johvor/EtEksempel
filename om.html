@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Om HTML</title>
+    </head>
+    <style type="text/css">
+        .menu a {
+            background-color: #F2F2F2;
+            padding: 12px;
+            text-decoration: none;
+        }
+        .menu a:hover {
+            background-color: #E0F8F7;
+            color: darkgray
+        }
+        .menu a.active {
+            background-color: #088A85;
+            color: white;
+        }
+    </style>
+    <body>
+        <section>
+            <div class="menu">
+                <a href="index.html">Forside</a>
+                <a href="om.html" class="active">Om html</a>
+                <a href="semantisketags.html">Semantiske tags</a>
+                <a href="m-tags.html">Meta-tags</a>
+            </div>       
+        </section>
+        <section>
+            <h1>Om HTML</h1>
+            <p>Denne side indeholder en lille forklaring af HTML.<br>Nogle af forklaringerne på denne sidefindes også i koden<br>til denne side, forsiden og semantiske tags.<br><br><strong>Bemærk:</strong><i> Da jeg ikke kan finde frem til tags,<br>der lader mig vise "krokodillenæb" på selve hjemmesiden her,<br>vil disse være indsat som billeder.<br>Jeg kunne have valgt at benytte xmp-tagget, men det bruges ikke<br>mere, og derfor har jeg valgt ikke at benytte det.</i></p>
+        </section>
+        <section>
+            <h2>Hvad er HTML?</h2>
+            <p>HTML står for HyperText Markup Language, og det er et sprog til<br>at skrive online content i. Det bruges til opsætning af hjemmesider,<br>men dets brug er ganske begrænset i forbindelse med styling. Hertil<br>kan der eksempelvis benyttes CSS.</p>
+            <p>HTML har ændret sig gennem årene, og der eksisterer derfor flere<br>versioner af det. Det betyder, at en stor del af tidligere benyttede tags<br>ikke kan bruges i dag, da det er forældede eller skiftet ud med nogle<br>nye, der bedre definerer indholdet i tagget.</p>
+        </section>
+        <section>
+            <h2>Når koden skal skrives</h2>
+            <p>Principielt kan html skrives i Ms Word, men det er ikke en god løsning.<br>Gøres dette vil der automatisk medfølge en masse data om formateringen,<br>og det fylder ganske meget. Derfor er det en god idé at skrive sin kode i<br>en editor - eksempelvis Brackets. Det giver ren tekst i dokumentet<br>uden ekstra fyld i form af unødvendig formatering.<br></p>
+            <div>Dokumentets opbygning kan se sådan ud:<br><img src="/billeder/bil1.png" alt="Simpel kode skrevet i HTML." height="170"></div>
+        </section>
+        <section>
+            <h2>Forskellige tags</h2>
+            <p>HTML kan indeholde mange forskellige tags. Her kan du læse lidt om nogle de tags,<br>som jeg har brugt til min hjemmeside.<br></p>
+            <img src="billeder/bil2.png" alt="forklaring af tags" width="700"><br>
+            <p>Dette tag inddeler dokumentet i sektioner. For en brødtekst kan det<br>eksempelvis betyde, at det formateres anderledes end den øvrige tekst. Dette er også et eksempel<br>på et semantisk tag. Du kan <a href="semantisketags.html">læse mere om semantiske tags ved at klikke her</a>.<br><br></p>
+        </section>
+    </body>
+</html>
+<!--Dette dokument er lavet af Johanne Vorre, sk17mmsx117, september 2017-->
+<!-- Valideret på følgende hjemmeside d. 19. september 2017: https://jigsaw.w3.org/css-validator-->

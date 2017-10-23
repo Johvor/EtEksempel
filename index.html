@@ -1,0 +1,51 @@
+    <!DOCTYPE html> <!-- Dette tag definere, hvilket kodesprog, der skrives i.-->
+<html lang="da"><!-- Attributten 'lang' fortæller, hvilket sprog, der står skrevet i elementerne på selve sitet. 'da' fortæller, at det står på dansk.-->
+    <head><!--Head vises ikke som sådan, men det her betydning for resten af indholdet i dokumentet.-->
+        <meta charset="utf-8"/> <!--Dette definerer ikke tekstens sprog, men det understøtter danske tegn.-->
+        <title>Forside</title><!--title-tagget beskriver navnet, der står på fanebladet i browseren.-->
+    </head>
+    <style type="text/css">/*Jeg har her forsøgt at prøve CSS*/
+        .vertical-menu {
+            width:130px;/*definerer bredden på menuboksen. 130px = 130 pixels*/
+        }
+        .vertical-menu a {
+            background-color: #F2F2F2;/*farven på boksen - pånær øverste bjælke*/
+            color: dimgray;/*Skriftfarven i menuboksen - undtagen den øverste*/
+            display: block;/*vertikale kasser til menubaren*/
+            padding: 12px;/*space omkring indholdet*/
+            text-decoration: none;/*Fjerner understregen ved aktive links*/
+        }
+        .vertical-menu a:hover { /*Funktion for når musen holdes over et felt*/
+            background-color: #E0F8F7;/*baggrundsfarve når musen holdes over*/
+            color: darkgray/*skriftfarve når musen holdes over*/
+        }
+        .vertical-menu a.active {
+            background-color: #088A85;/*ændrer baggrundsfarven på den øverste bjælke i menuen*/
+            color: white;
+        }
+    </style>
+    <body><!--Body-tagget definerer det synlige indhold i dokumentet-->
+        <h1 style="font-family:fantasy">Velkommen til min HTML-opgave</h1><!--Dette er hovedoverskriften. Yderligere overskrifter tagges med h2, h3 osv. for at indikere, at de hører under denne. Jeg har leget en smule med typografi i denne overskrift.-->
+        <p style="font-family:courier">Dette er min besvarelse af opgaven,<br>der skal afleveres senest <i><u>d. 20. september 2017.</u></i></p><!--Dette er en paragraf. Den kan bruges til enkelte tekststykker i dokumentet. Desuden har jeg leget med typografi i dette tekststykke-->
+        <section>
+            <div class="vertical-menu">
+                <a href="index.html" class="active">Forside</a>
+                <a href="om.html">Om HTML</a>
+                <a href="semantisketags.html">Semantiske tags</a>
+                <a href="m-tags.html">Meta-tags</a>
+            </div>       
+        </section>
+        <section>
+            <p>Dette er også et eksempel på en helt simpel menu:</p>
+            <nav>
+                <a href="index.html">Du er her: Forside</a> |
+                <a href="om.html">Om html</a> |
+                <a href="semantisketags.html">Semantiske tags</a> |
+                <a href="m-tags.html">Meta-tags</a>
+            </nav>
+       </section>
+    </body>
+</html>
+<!--Indhold udenfor HTML-tagget vises ikke, og derfor kan man bruge pladsen herunder til eksempelvis noter til dokumentet, informationer vedrørende copyrigt eller andre ting-->
+<!--Dette dokument er lavet af Johanne Vorre, sk17mmsx117, september 2017-->
+<!-- Valideret på følgende hjemmeside d. 19. september 2017: https://jigsaw.w3.org/css-validator-->
